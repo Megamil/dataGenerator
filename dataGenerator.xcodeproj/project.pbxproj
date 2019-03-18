@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8634F03C223F100F00EDCF60 /* dataGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8634F03A223F100F00EDCF60 /* dataGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8634F043223F101E00EDCF60 /* dataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634F042223F101E00EDCF60 /* dataGenerator.swift */; };
+		8634F045223F108200EDCF60 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8634F044223F108200EDCF60 /* README.md */; };
+		8634F04B223F112B00EDCF60 /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634F04A223F112B00EDCF60 /* example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8634F037223F100E00EDCF60 /* dataGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dataGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8634F03A223F100F00EDCF60 /* dataGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataGenerator.h; sourceTree = "<group>"; };
 		8634F03B223F100F00EDCF60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8634F042223F101E00EDCF60 /* dataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataGenerator.swift; sourceTree = "<group>"; };
+		8634F044223F108200EDCF60 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8634F04A223F112B00EDCF60 /* example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,7 @@
 		8634F02D223F100E00EDCF60 = {
 			isa = PBXGroup;
 			children = (
+				8634F044223F108200EDCF60 /* README.md */,
 				8634F039223F100E00EDCF60 /* dataGenerator */,
 				8634F038223F100E00EDCF60 /* Products */,
 			);
@@ -47,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				8634F03A223F100F00EDCF60 /* dataGenerator.h */,
+				8634F042223F101E00EDCF60 /* dataGenerator.swift */,
 				8634F03B223F100F00EDCF60 /* Info.plist */,
+				8634F04A223F112B00EDCF60 /* example.swift */,
 			);
 			path = dataGenerator;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					8634F036223F100E00EDCF60 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8634F045223F108200EDCF60 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8634F04B223F112B00EDCF60 /* example.swift in Sources */,
+				8634F043223F101E00EDCF60 /* dataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		8634F040223F100F00EDCF60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Megamil.dataGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		8634F041223F100F00EDCF60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
