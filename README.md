@@ -3,83 +3,82 @@
 ```swift
 import dataGenerator
 
-print("Cartão: " + dataGenerator.creditCard(for: .MasterCard,Masked: .Masked))
-// => One random credcard number
+//One Credcard number MasterCard
+print("Credcard Number: " + dataGenerator.creditCard(for: .MasterCard, Masked: .Masked))
 
+//One Random Address complete
 let address = dataGenerator.addressComplete()
+print("City: \(String(describing: address["city"]!)), Neighborhood: \(String(describing: address["neighborhood"]!)), Street: \(String(describing: address["street"]!)), Number: \(String(describing: address["number"]!)), ZipCode: \(String(describing: address["zipCode"]!))")
 
-print("Cidade: \(String(describing: address["city"]!)), Bairro: \(String(describing: address["neighborhood"]!)), Rua: \(String(describing: address["street"]!)), Número: \(String(describing: address["number"]!)), CEP: \(String(describing: address["zipCode"]!))")
-// => One random addressComplete ()
+//One formatted date
+print("Date: " + dataGenerator.date(format: "dd/MM/yyyy hh:mm:ss", milisecond: 0))
 
-print("Data: " + dataGenerator.date(format: "dd/MM/yyyy hh:mm:ss", milisecond: 0))
-// => One Date
+//One Cell phone and Phone with mask
+print("Cellphone: " + dataGenerator.phone(Masked: .Masked, Phone: .Cellphone, withDDD: .WithDDD))
+print("Phone: " + dataGenerator.phone(Masked: .Masked, Phone: .Phone, withDDD: .WithDDD))
 
-print("Celular: " + dataGenerator.phone(Masked: .Masked, Cel: true, withDDD: true))
-print("Telefone: " + dataGenerator.phone(Masked: .Masked, Cel: false, withDDD: false))
-// => One Phone random
+// => One random password
+print("Password: " + dataGenerator.password(for: .Alphanumeric,length: 10))
 
-print("Senha: " + dataGenerator.password(for: .Alphanumeric,length: 10))
-// => One Password random
-
+// => One random Boolean
 print(dataGenerator.randomBool())
-// => One Bool random valid
 
+// => One random RG
 print("RG: " + dataGenerator.rg(Masked: .Masked))
-// => One RG random valid
 
+// => One random CPF valid
 print("CPF: " + dataGenerator.cpf(Masked: .Masked))
-// => One CPF random valid
 
+// => One random CPNJ
 print("CNPJ: " + dataGenerator.cnpj(Masked: .Masked))
-// => One CPNJ random
 
-print("CEP: " + dataGenerator.zipCode(Masked: .Masked))
-// => One CEP random
+// => One random ZipCode BR (CEP)
+print("ZipCode BR: " + dataGenerator.zipCode(Masked: .Masked))
 
-print("PLACA DE CARRO: " + dataGenerator.carPlate(Masked: .Masked))
-// => One Car Plate random
+// => One random Car Plate
+print("Car Plate: " + dataGenerator.carPlate(Masked: .Masked))
 
-print("PALAVRA: " + dataGenerator.word)
-// => One random word
+// => One word random
+print("Word: " + dataGenerator.word)
 
-print("PALAVRAS: " + dataGenerator.words(3))
-// => Three random words
+// => Three words random
+print("Words: " + dataGenerator.words(3))
 
-print("SENTENÇA: " + dataGenerator.sentence)
-// => One random sentence
+// => One sentence random
+print("Sentence: " + dataGenerator.sentence)
 
-print("SENTENÇAS: " + dataGenerator.sentences(3))
-// => Three random sentences
+// => Three sentences random
+print("Sentences: " + dataGenerator.sentences(3))
 
-print("PARAGRAFO: " + dataGenerator.paragraph)
-// => One random paragraph
+// => One paragraph random
+print("Paragraph: " + dataGenerator.paragraph)
 
-print("PARAGRAFOS: " + dataGenerator.paragraphs(3))
-// => Three random paragraphs
+// => Three paragraphs random
+print("Paragraphs: " + dataGenerator.paragraphs(3))
 
-print("TÍTULO: " + dataGenerator.title)
-// => A random title
+// => A title random
+print("Title: " + dataGenerator.title)
 
-print("PRIMEIRO NOME: " + dataGenerator.firstName)
-// => A random first name
+// => A first name random
+print("First name: " + dataGenerator.firstName)
 
-print("ÚLTIMO NOME: " + dataGenerator.lastName)
-// => A random last name
+// => A last name random
+print("Last name: " + dataGenerator.lastName)
 
-print("NOME COMPLETO: " + dataGenerator.fullName)
-// => A random full name
+// => A full name random
+print("Full name: " + dataGenerator.fullName)
 
+// => A email address random
 print("E-MAIL: " + dataGenerator.emailAddress)
-// => A random email address
 
+// => A URL random
 print("URL: " + dataGenerator.url)
-// => A random URL
 
+// => A short tweet random
 print("TWEET 140: " + dataGenerator.shortTweet)
-// => A random short tweet
 
+// => A long tweet random
 print("TWEET 280: " + dataGenerator.tweet)
-// => A random long tweet
 ```
 
 ## Author
