@@ -1,3 +1,8 @@
+## Installation
+
+Using CocoaPods 
+  pod 'dataGenerator'
+
 ## Usage
 
 ```swift
